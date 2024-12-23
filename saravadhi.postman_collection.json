@@ -1,0 +1,283 @@
+{
+	"info": {
+		"_postman_id": "d613eb61-6d95-4faa-a236-42d3a3d935e2",
+		"name": "saravadhi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34898058"
+	},
+	"item": [
+		{
+			"name": "get project",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location 'http://127.0.0.1:8000/api/projects/' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU2NDk1LCJpYXQiOjE3MzQ5NzAwOTUsImp0aSI6IjhkYTkzN2ZkYWY2YjRkNDI4NjNjZTkyMjlkYjQwNmQ0IiwidXNlcl9pZCI6Mn0.oUX_c6Xa4omMLjEDNFQslKRoXKpgxW0bciPGlf3UdWs'\r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "post project",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Health checkup\",\r\n    \"description\": \"Records of fitness\",\r\n    \"start_date\": \"2024-12-31\",\r\n    \"end_date\": \"2024-12-30\",\r\n    \"created_by\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "project detail",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "put project detail",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"checkup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"1",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete project",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"checkup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/projects/1/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"projects",
+						"1",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location --request PUT 'http://127.0.0.1:8000/api/projects/1/' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"name\": \"checkup\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "list task",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"checkup\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location --request DELETE 'http://127.0.0.1:8000/api/projects/1/' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"name\": \"checkup\"\r\n}'"
+			},
+			"response": []
+		},
+		{
+			"name": "post task",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Task Title\",\r\n    \"description\": \"This is a description of the task.\",\r\n    \"start_date\": \"2024-12-23\",\r\n    \"due_date\": \"2024-12-25\",\r\n    \"assigned_to\": 2,  \r\n    \"project\": 2\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/tasks/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"tasks",
+						""
+					]
+				},
+				"description": "Generated from cURL: curl --location --request GET 'http://127.0.0.1:8000/api/tasks/' \\\r\n--header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzM1MDU3MDY5LCJpYXQiOjE3MzQ5NzA2NjksImp0aSI6ImQ3NmFhMzBlMmJkNjQ5YTk5MDJmYmJlZDNkNDA2N2U5IiwidXNlcl9pZCI6Mn0.RxADd6Lk2GRN27xiR1bh-p8OkqKL8D8xPStKn7trYMs' \\\r\n--header 'Content-Type: application/json' \\\r\n--data '{\r\n    \"name\": \"checkup\"\r\n}'"
+			},
+			"response": []
+		}
+	]
+}

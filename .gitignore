@@ -1,0 +1,54 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+venv/
+env/
+.venv/
+.env/
+
+# Django migrations
+*/migrations/
+*/__pycache__/
+
+# Django secret key file
+*.env
+
+# Database files
+*.sqlite3
+
+# Media files
+/media/
+
+# Static files (if using collectstatic)
+/static/
+
+# IDE files
+.vscode/
+.idea/
+
+# MacOS system files
+.DS_Store
+
+# Log files
+*.log
+
+# Coverage reports
+.coverage
+*.cover
+
+# pytest
+.cache/
+
+# PyCharm files
+.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Docker files
+docker-compose.override.yml
+docker-compose.prod.yml
